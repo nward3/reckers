@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.nicholasward.reckers.MenuActivity">
+
+    <!-- Pizzas -->
+    <TextView
+        android:id="@+id/pizzas"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_pizzas"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- Piadinas -->
+    <TextView
+        android:id="@+id/piadinas"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_piadinas"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- Burgers -->
+    <TextView
+        android:id="@+id/burgers"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_burgers"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- Salads -->
+    <TextView
+        android:id="@+id/salads"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_salads"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- Smoothies -->
+    <TextView
+        android:id="@+id/smoothies"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_smoothies"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <!-- Coffee -->
+    <TextView
+        android:id="@+id/coffee"
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_coffee"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>

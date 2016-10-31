@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Reckers</string>
+
+    <string name="category_pizzas">Pizzas</string>
+
+    <string name="category_piadinas">Piadinas</string>
+
+    <string name="category_burgers">Burgers</string>
+
+    <string name="category_salads">Salads</string>
+
+    <string name="category_smoothies">Smoothies</string>
+
+    <string name="category_coffee">Coffee</string>
+</resources>
