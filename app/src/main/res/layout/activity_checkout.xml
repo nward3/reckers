@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.nicholasward.reckers.CheckoutActivity">
+
+    <!-- time selection -->
+    <TextView
+        android:id="@+id/pickup_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_pickup_time"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/time_immediately"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTimeRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/set_a_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTimeRadioButtonClicked"/>
+    </RadioGroup>
+
+    <!-- payment method selection -->
+    <TextView
+        android:id="@+id/payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_payment_method"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/flex_points_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPaymentRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/domer_dollars_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPaymentRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/credit_debit_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPaymentRadioButtonClicked" />
+    </RadioGroup>
+
+    <!-- order cost -->
+    <TextView
+        android:id="@+id/payment_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_subtotal"/>
+    <TextView
+        android:id="@+id/payment_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_tax"/>
+    <TextView
+        android:id="@+id/payment_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_total"/>
+
+    <!-- confirm purchase -->
+    <TextView
+        android:id="@+id/order_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/confirm_purchase_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmPurchase"
+        android:text="Confirm Purchase"/>
+
+</LinearLayout>

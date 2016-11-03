@@ -12,4 +12,24 @@
     <string name="category_smoothies">Smoothies</string>
 
     <string name="category_coffee">Coffee</string>
+
+    <string name="checkout_pickup_time">Pickup Time</string>
+
+    <string name="checkout_payment_method">Payment Method</string>
+
+    <string name="checkout_subtotal">Subtotal</string>
+
+    <string name="checkout_tax">Tax</string>
+
+    <string name="checkout_total">Total</string>
+
+    <string name="customize">Customize</string>
+
+    <string name="add_to_cart">Add To Cart</string>
+
+    <string name="confirm_purchase">Confirm Purchase</string>
+
+    <string name="continue_ordering">Continue Ordering</string>
+
+    <string name="proceed_to_checkout">Proceed To Checkout</string>
 </resources>

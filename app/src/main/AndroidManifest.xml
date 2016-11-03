@@ -63,6 +63,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuActivity" />
         </activity>
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".ActiveOrdersActivity" />
+        <activity android:name=".CartPreviewActivity" />
+        <activity android:name=".CustomizeSmoothieActivity"></activity>
     </application>
 
 </manifest>

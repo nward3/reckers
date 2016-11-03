@@ -1,7 +1,10 @@
 package com.nicholasward.reckers;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -36,6 +39,18 @@ public class SmoothieActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
 
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // get the menu item clicked on
+                MenuItem menuItem = smoothies.get(position);
+
+                // transition to CustomizeSmoothieActivity
+                Intent customizeSmoothieIntent = new Intent(SmoothieActivity.this, CustomizeSmoothieActivity.class);
+                startActivity(customizeSmoothieIntent);
+            }
+        });
 
     }
 }
